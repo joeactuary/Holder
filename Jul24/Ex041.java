@@ -34,10 +34,10 @@ class ChildChart {
             }
 
             public ChildAge findChildAge(int age){
-        for (int i=0; i < childChart.size(); i++) {
-            if (childChart.get(i).getAge() == age)
-                return childChart.get(i);
-        }
+                for (ChildAge childAge : childChart) {
+                    if (childAge.getAge() == age)
+                        return childAge;
+                }
             return null;
         }
 

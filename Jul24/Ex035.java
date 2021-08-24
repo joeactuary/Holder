@@ -8,7 +8,7 @@ public class Ex035 {
         Scanner scanner = new Scanner(System.in);
         //System.out.println("Do you need a loan? Y/N");
         boolean needLoan = scanner.nextBoolean();
-        if (needLoan == true) {
+        if (needLoan) {
             int creditScore = scanner.nextInt();
             System.out.println("The eligibility is " + loanDecision(creditScore));
         }

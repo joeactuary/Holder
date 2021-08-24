@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<String> carList;
-        carList = new ArrayList<String>();
+        carList = new ArrayList<>();
         carList.add("porche");
         carList.add("tesla");
         carList.add("mustang");
@@ -23,9 +23,12 @@ public class Main {
 
 
 
-            Iterator<String> iterator = carList.iterator();
+       /* Iterator<String> iterator = carList.iterator();
         while (iterator.hasNext())
-                System.out.println(iterator.next());
+            System.out.println(iterator.next());*/
+
+
+        for (String s : carList) System.out.println(s);
 
 
 

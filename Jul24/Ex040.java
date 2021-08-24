@@ -34,9 +34,9 @@ class Schedule {
     }
 
     public Instructor findInstructor(String instructor) {
-        for (int i = 0; i < this.schedule.size(); i++) {
-            if (this.schedule.get(i).getName().equals(instructor))
-                return this.schedule.get(i);
+        for (Instructor value : this.schedule) {
+            if (value.getName().equals(instructor))
+                return value;
         }
         return null;
     }

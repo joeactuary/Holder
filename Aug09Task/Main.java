@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 class  Person {
-  private String salutation;
+  private final String salutation;
+  //  private String salutation;
   private String name;
 
     public Person(String salutation, String name) {

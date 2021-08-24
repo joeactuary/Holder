@@ -5,14 +5,12 @@ import java.util.Scanner;
 class Grade {
     private int score1;
     private int score2;
-    private int score3;
     private double averageScore;
     private char grade;
 
     public Grade(int score1, int score2, int score3) {
         this.score1 = score1;
         this.score2 = score2;
-        this.score3 = score3;
         this.averageScore = score1 + score2 + score3;
         this.grade = getGrade();
         System.out.println("Your grade is " + getGrade());
